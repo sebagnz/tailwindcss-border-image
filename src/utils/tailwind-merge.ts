@@ -6,7 +6,7 @@ export function withBorderImage(config: Config): Config {
       classGroups: {
         'border-image.source': [{ 'border-image': ['fill'] }],
         'border-image.border-slice': [{ 'border-image': ['empty', 'fill'] }],
-        'border-image.outset': [{ 'border-outset': ['x-screen'] }],
+        'border-image.outset': [{ 'border-outset': ['x-screen', 'screen'] }],
       },
     },
   })
