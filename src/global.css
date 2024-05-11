@@ -11,3 +11,25 @@
     @apply text-xl font-bold;
   }
 }
+
+@layer utilities {
+  .slant {
+    --angle: 3deg;
+    --angle-tan: tan(var(--angle));
+    margin-block: calc(100vw * var(--angle-tan));
+    clip-path: polygon(var(--p0), var(--p1), var(--p2), var(--p3));
+  }
+  .slant-l {
+    --p0: -100vw calc(var(--angle-tan) * 100vw);
+    --p1: 100vw calc(var(--angle-tan) * -100vw);
+    --p2: calc(100% + 100vw) calc(100% - var(--angle-tan) * 100vw);
+    --p3: calc(100% - 100vw) calc(100% + var(--angle-tan) * 100vw);
+  }
+
+  .slant-r {
+    --p0: -100vw calc(100% - var(--angle-tan) * 100vw);
+    --p1: 100vw calc(100% + var(--angle-tan) * 100vw);
+    --p2: calc(100% + 100vw) calc(var(--angle-tan) * 100vw);
+    --p3: calc(100% - 100vw) calc(var(--angle-tan) * -100vw);
+  }
+}
