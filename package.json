@@ -1,17 +1,22 @@
 {
-  "name": "playground",
+  "name": "tailwindcss-border-image",
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "keywords": [
+    "tailwindcss",
+    "tailwindcss-plugin",
+    "border-image",
+    "css border-image"
+  ],
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview"
   },
-  "dependencies": {
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+  "peerDependencies": {
+    "tailwindcss": ">=3.2.0"
   },
   "devDependencies": {
     "@types/react": "^18.2.66",
@@ -24,6 +29,8 @@
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.4.6",
     "postcss": "^8.4.38",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
     "tailwind-merge": "^2.3.0",
     "tailwindcss": "^3.4.3",
     "typescript": "^5.2.2",

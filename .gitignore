@@ -1,2 +1,12 @@
-node_modules
-dist
+# dependencies
+/node_modules
+
+# misc
+.DS_Store
+
+# compilation output
+/build
+/dist
+
+# test coverage
+/coverage
