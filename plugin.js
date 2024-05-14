@@ -42,7 +42,7 @@ const sourceUtilities = ({ matchUtilities, theme }) => {
       }),
     },
     {
-      values: { ...theme('backgroundImage'), conic: 'conic-gradient(var(--tw-gradient-stops) 0 0)' },
+      values: theme('backgroundImage'),
     }
   )
 }
