@@ -4,6 +4,11 @@ import '../src/global.css'
 
 const preview: Preview = {
   parameters: {
+    options: {
+      storySort: {
+        order: ['Example', ['Breakout', 'SlantBreakout', 'Overlay', 'Heading', 'ShapeBreakout']],
+      },
+    },
     layout: 'centered',
     backgrounds: {
       default: 'base',
