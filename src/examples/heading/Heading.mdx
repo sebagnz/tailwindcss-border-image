@@ -1,0 +1,69 @@
+import { Source, Meta, Title, Story } from '@storybook/blocks'
+
+import * as HeadingStories from './Heading.stories'
+
+<Meta of={HeadingStories} />
+
+<Title />
+
+## Variant 1
+
+### HTML
+
+<Source code={`
+<div class="border-image-gradient-to-t from-indigo-400 from-10% to-indigo-100 to-0%">
+  <!-- Your content -->
+</div>
+`} language="html" />
+
+<Story of={HeadingStories.Variant1} />
+
+## Variant 2
+
+### HTML
+
+<Source code={`
+<div class="border-image-gradient-to-t from-indigo-400 from-10% to-transparent to-0% border-outset-r-screen">
+  <!-- Your content -->
+</div>
+`}  language="html" />
+
+<Story of={HeadingStories.Variant2} />
+
+## Variant 3
+
+### HTML
+
+<Source code={`
+<div class="w-fit border-image-gradient-to-t from-red-700 from-[10%] to-transparent to-0% border-outset-l-screen">
+  <!-- Your content -->
+</div>
+`}  language="html" />
+
+<Story of={HeadingStories.Variant3} />
+
+## Variant 4
+
+### Tailwind CSS Config
+
+<Source code={`
+{
+  theme: {
+    extend: {
+      backgroundImage: {
+        repeating: 'repeating-linear-gradient(45deg, var(--tw-gradient-stops))',
+      }
+    }
+  }
+}
+`} language="json" />
+
+### HTML
+
+<Source code={`
+<div class="border-image-repeating from-red-600 from-[0_10px] via-orange-500 via-[0_20px] to-yellow-500 to-[0_30px] border-image-width-t-[calc(100%-5px)] border-repeat-repeat">
+  <!-- Your content -->
+</div>
+`}  language="html" />
+
+<Story of={HeadingStories.Variant4} />

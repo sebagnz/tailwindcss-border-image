@@ -16,6 +16,7 @@
   .slant {
     --angle: 3deg;
     --angle-tan: tan(var(--angle));
+
     margin-block: calc(100vw * var(--angle-tan));
     clip-path: polygon(var(--p0), var(--p1), var(--p2), var(--p3));
   }

@@ -1,0 +1,17 @@
+import { Source, Meta, Title, Story } from '@storybook/blocks'
+
+import * as OverlayStories from './Overlay.stories'
+
+<Meta of={OverlayStories} />
+
+<Title />
+
+### HTML
+
+<Source code={`
+<div class="border-image-gradient-to-b from-black/30 to-black">
+  <!-- Your content -->
+</div>
+`} language="html" />
+
+<Story of={OverlayStories.Primary} />

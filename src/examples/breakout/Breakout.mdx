@@ -1,0 +1,31 @@
+import { Source, Meta, Story, Title } from '@storybook/blocks'
+
+import * as BreakoutStories from './Breakout.stories'
+
+<Meta of={BreakoutStories} />
+
+<Title />
+
+### Tailwind CSS Config
+
+<Source code={`
+{
+  theme: {
+    extend: {
+      backgroundImage: {
+        conic: "conic-gradient(var(--tw-gradient-stops) 0 0)"
+      }
+    }
+  }
+}
+`} language="json" />
+
+### HTML
+
+<Source code={`
+<div class="border-image-conic from-indigo-400 to-indigo-400 border-outset-x-screen">
+  <!-- Your content -->
+</div>
+`}  language="html" />
+
+<Story of={BreakoutStories.Primary} />

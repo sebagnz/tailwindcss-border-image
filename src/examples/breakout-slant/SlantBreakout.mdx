@@ -1,0 +1,70 @@
+import { Source, Meta, Title, Story } from '@storybook/blocks'
+
+import * as SlantBreakoutStories from './SlantBreakout.stories'
+
+<Meta of={SlantBreakoutStories} />
+
+<Title>Breakout Slant</Title>
+
+### Tailwind CSS Config
+
+<Source code={`
+{
+  theme: {
+    extend: {
+      backgroundImage: {
+        conic: "conic-gradient(var(--tw-gradient-stops) 0 0)"
+      }
+    }
+  }
+}
+`} language="json" />
+
+### Main CSS
+
+<Source code={`
+@layer utilities {
+  .slant {
+    --angle: 3deg;
+    --angle-tan: tan(var(--angle));
+    margin-block: calc(100vw * var(--angle-tan));
+    clip-path: polygon(var(--p0), var(--p1), var(--p2), var(--p3));
+  }
+
+  .slant-l {
+    --p0: -100vw calc(var(--angle-tan) * 100vw);
+    --p1: 100vw calc(var(--angle-tan) * -100vw);
+    --p2: calc(100% + 100vw) calc(100% - var(--angle-tan) * 100vw);
+    --p3: calc(100% - 100vw) calc(100% + var(--angle-tan) * 100vw);
+  }
+
+  .slant-r {
+    --p0: -100vw calc(100% - var(--angle-tan) * 100vw);
+    --p1: 100vw calc(100% + var(--angle-tan) * 100vw);
+    --p2: calc(100% + 100vw) calc(var(--angle-tan) * 100vw);
+    --p3: calc(100% - 100vw) calc(var(--angle-tan) * -100vw);
+  }
+}
+`} language="css" />
+
+## With some opacity
+
+### HTML
+
+<Source code={`
+<div class="slant slant-r border-image-conic from-indigo-400/30 to-indigo-400/30 border-outset-screen">
+  <!-- Your content -->
+</div>
+`} language="html" />
+
+<Story of={SlantBreakoutStories.Opacity} />
+
+## Filled
+
+<Source code={`
+<div class="slant slant-l border-image-conic from-indigo-400 to-indigo-400 border-outset-screen">
+  <!-- Your content -->
+</div>
+`} language="html" />
+
+<Story of={SlantBreakoutStories.Filled} />
