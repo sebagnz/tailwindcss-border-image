@@ -16,8 +16,8 @@
     "test": "",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
-    "release-channel": "node ./scripts/release-channel.js",
-    "release-notes": "node ./scripts/release-notes.js"
+    "release-channel": "node ./scripts/release-channel.cjs",
+    "release-notes": "node ./scripts/release-notes.cjs"
   },
   "peerDependencies": {
     "tailwindcss": ">=3.2.0"
