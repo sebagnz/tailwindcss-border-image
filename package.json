@@ -7,6 +7,7 @@
     "border-image",
     "css border-image"
   ],
+  "repository": "https://github.com/sebagnz/tailwindcss-border-image",
   "files": [
     "index.js"
   ],
