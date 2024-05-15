@@ -1,6 +1,5 @@
 {
   "name": "tailwindcss-border-image",
-  "private": true,
   "version": "0.0.0",
   "type": "module",
   "keywords": [
@@ -16,7 +15,9 @@
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "test": "",
     "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build"
+    "build-storybook": "storybook build",
+    "release-channel": "node ./scripts/release-channel.js",
+    "release-notes": "node ./scripts/release-notes.js"
   },
   "peerDependencies": {
     "tailwindcss": ">=3.2.0"
