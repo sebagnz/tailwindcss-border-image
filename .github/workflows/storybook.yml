@@ -1,7 +1,7 @@
 name: Publish Storybook to GH Pages
 
 on:
-  workflow_dispatch
+  workflow_dispatch:
   workflow_run:
     workflows: [Publish to npm]
     types:
