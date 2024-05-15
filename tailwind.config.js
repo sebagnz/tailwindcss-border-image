@@ -9,5 +9,5 @@ export default {
       },
     },
   },
-  plugins: [require('./plugin')],
+  plugins: [require('./index')],
 }
