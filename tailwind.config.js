@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-  content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
+  content: ['./stories/**/*.{js,ts,jsx,tsx}'],
   theme: {
     extend: {
       backgroundImage: {
@@ -9,5 +9,5 @@ export default {
       },
     },
   },
-  plugins: [require('./index')],
+  plugins: [require('./src/index')],
 }

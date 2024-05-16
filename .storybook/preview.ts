@@ -1,6 +1,6 @@
 import type { Preview } from '@storybook/react'
 
-import '../src/global.css'
+import '../stories/global.css'
 
 const preview: Preview = {
   parameters: {
@@ -18,12 +18,6 @@ const preview: Preview = {
           value: '#1e293b',
         },
       ],
-    },
-    controls: {
-      matchers: {
-        color: /(background|color)$/i,
-        date: /Date$/i,
-      },
     },
   },
 }

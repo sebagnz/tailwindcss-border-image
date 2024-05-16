@@ -48,7 +48,7 @@ The border-image-source CSS property sets the source image used to create an ele
 
 To set the border-image source you can use the `border-image-{utility}`.
 
-`{utility}` can be any value defined in your `theme.backgroundImage` meaning that any gradient or image resource included in your theme can be used as a border image source. For example `border-image-gradient-to-t`.
+`{utility}` can be any value defined in your `theme.backgroundImage` meaning that any gradient or image resource included in your theme can be used as a border image source. For example `border-image-gradient-to-t-`.
 
 It also supports arbitrary values, that way if you don't want to add an specific backgroundImage to your theme you can just inline it. For example: `border-image-[conic-gradient(var(--tw-gradient-stops) 0 0)]`
 
@@ -59,7 +59,7 @@ It also supports arbitrary values, that way if you don't want to add an specific
 | `border-slice-`   | `{theme.width}`  | Sets a value for all four slices           |
 | `border-slice-x-` | `{theme.width}`  | Sets a value for the left and right slices |
 | `border-slice-y-` | `{theme.height}` | Sets a value for the top and bottom slices |
-| `border-slice-t`  | `{theme.height}` | Sets a value for the top slice             |
+| `border-slice-t-` | `{theme.height}` | Sets a value for the top slice             |
 | `border-slice-r-` | `{theme.width}`  | Sets a value for the right slice           |
 | `border-slice-b-` | `{theme.height}` | Sets a value for the bottom slice          |
 | `border-slice-l-` | `{theme.width}`  | Sets a value for the left slice            |
@@ -85,7 +85,7 @@ With the slice property you can control the 8 outer slices. To control the inner
 | `border-image-width-`   | `{theme.width}`  | Sets a value for all four widths           |
 | `border-image-width-x-` | `{theme.width}`  | Sets a value for the left and right widths |
 | `border-image-width-y-` | `{theme.height}` | Sets a value for the top and bottom widths |
-| `border-image-width-t`  | `{theme.height}` | Sets a value for the top width             |
+| `border-image-width-t-` | `{theme.height}` | Sets a value for the top width             |
 | `border-image-width-r-` | `{theme.width}`  | Sets a value for the right width           |
 | `border-image-width-b-` | `{theme.height}` | Sets a value for the bottom width          |
 | `border-image-width-l-` | `{theme.width}`  | Sets a value for the left width            |
@@ -99,7 +99,7 @@ The border-image-width CSS property sets the width of an element's border image 
 | `border-outset-`   | `{theme.width}`  | Sets a value for all four outsets           |
 | `border-outset-x-` | `{theme.width}`  | Sets a value for the left and right outsets |
 | `border-outset-y-` | `{theme.height}` | Sets a value for the top and bottom outsets |
-| `border-outset-t`  | `{theme.height}` | Sets a value for the top outset             |
+| `border-outset-t-` | `{theme.height}` | Sets a value for the top outset             |
 | `border-outset-r-` | `{theme.width}`  | Sets a value for the right outset           |
 | `border-outset-b-` | `{theme.height}` | Sets a value for the bottom outset          |
 | `border-outset-l-` | `{theme.width}`  | Sets a value for the left outset            |
