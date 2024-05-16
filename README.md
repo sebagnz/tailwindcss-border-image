@@ -14,7 +14,7 @@ The border-image property is widely supported. (Even since IE). You can check it
 npm install -D tailwindcss-border-image
 ```
 
-```json
+```javascript
 // tailwind.config.js
 module.exports = {
   theme: {
