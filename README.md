@@ -4,6 +4,10 @@ Add support for CSS [border-image][mdn-border-image] property.
 
 This plugin provides a set of primitives that enable you work and fully customize border-image properties. It's not opinionated, meaning it doesn't provide any UI components, and it doesn't override any tailwind default values or configuration.
 
+## Storybook
+
+In this [storybook][storybook] you'll find examples of real use cases and cool things you can build using this property.
+
 ## Browser compatibility
 
 The border-image property is widely supported. (Even since IE). You can check it's support [here][can-i-use-border-image].
@@ -117,10 +121,6 @@ Like the slice and width property, the witdh is also a short-and for the four si
 | `border-repeat-` | `repeat`, `round`, `space`, `stretch` |
 
 The border-image-repeat CSS property defines how the edge regions and middle region of a source image are adjusted to fit the dimensions of an element's border image.
-
-## Storybook
-
-In the [storybook][storybook] you'll find examples of real use cases and cool things you can build using this property.
 
 ## Resources
 
