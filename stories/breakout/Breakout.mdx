@@ -29,3 +29,15 @@ import * as BreakoutStories from './Breakout.stories'
 `}  language="html" />
 
 <Story of={BreakoutStories.Primary} />
+
+## With animation
+
+### HTML
+
+<Source code={`
+<div class="transition-all ease-in-out duration-300 border-image-conic from-indigo-400 to-indigo-400 border-outset-0 hover:border-outset-x-screen hover:border-outset-y-10 hover:from-purple-600/30 hover:to-purple-600/30">
+  <!-- Your content -->
+</div>
+`}  language="html" />
+
+<Story of={BreakoutStories.Animated} />

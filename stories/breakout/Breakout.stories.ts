@@ -24,3 +24,21 @@ export const Primary: Story = {
     className: 'border-image-conic from-indigo-400 to-indigo-400 border-outset-x-screen',
   },
 }
+
+export const Animated: Story = {
+  args: {
+    title: 'This section has a border-image with a full color breakout and is animated',
+    className: `
+    transition-all
+    ease-in-out
+    duration-300
+    border-image-conic
+    from-indigo-400
+    to-indigo-400
+    border-outset-0
+    hover:border-outset-x-screen
+    hover:border-outset-y-10
+    hover:from-purple-600/30
+    hover:to-purple-600/30`,
+  },
+}

@@ -14,7 +14,7 @@ export const Overlay = ({ title, className }: Props) => {
           'my-20 w-full max-w-xl aspect-video mx-auto',
           'grid place-items-center',
           'bg-[url(https://picsum.photos/seed/picsum/900/600)] bg-cover bg-center',
-          'text-center text-white',
+          'text-center text-white hover:text-black',
           className,
         )}
       >
