@@ -10,7 +10,7 @@
   ],
   "repository": "https://github.com/sebagnz/tailwindcss-border-image",
   "files": [
-    "src/*.js"
+    "src/*"
   ],
   "main": "src/index.js",
   "prettier": {
