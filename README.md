@@ -135,7 +135,7 @@ If you would like to know more about what you can do with this powerful CSS prop
 
 If you really like my job and you would like to [!["buy me a coffee"](https://img.shields.io/badge/-buy_me_a%C2%A0coffee-gray?logo=Buy-me-a-coffee)](https://www.buymeacoffee.com/sebagnz) I'd be eternally grateful 😊
 
-[storybook]: https://sebagnz.github.io/tailwindcss-border-image/?path=/docs/example-shapebreakout--docs
+[storybook]: https://sebagnz.github.io/tailwindcss-border-image/?path=/docs/example-breakout--docs
 [mdn-border-image]: https://developer.mozilla.org/en-US/docs/Web/CSS/border-image
 [can-i-use-border-image]: https://caniuse.com/border-image
 [the-complex-but-awesome-css-border-image-property]: https://www.smashingmagazine.com/2024/01/css-border-image-property/
