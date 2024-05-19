@@ -1,6 +1,6 @@
 {
   "name": "tailwindcss-border-image",
-  "version": "1.0.3",
+  "version": "1.1.1",
   "description": "Tailwind CSS plugin to add border-image utilities.",
   "keywords": [
     "tailwindcss",
