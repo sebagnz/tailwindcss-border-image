@@ -1,6 +1,6 @@
 const { getInitialValues } = require('../initial-values')
 
-const sourceUtilities = ({ matchUtilities, theme }) => {
+const utilities = ({ matchUtilities, theme }) => {
   matchUtilities(
     {
       'border-image': (value) => ({
@@ -14,4 +14,4 @@ const sourceUtilities = ({ matchUtilities, theme }) => {
   )
 }
 
-module.exports = { sourceUtilities }
+module.exports = { utilities }

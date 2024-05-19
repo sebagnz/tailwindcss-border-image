@@ -58,15 +58,21 @@ It also supports arbitrary values, that way if you don't want to add an specific
 
 ### Slice
 
-| Utility           | Values           |                                            |
-| ----------------- | ---------------- | ------------------------------------------ |
-| `border-slice-`   | `{theme.width}`  | Sets a value for all four slices           |
-| `border-slice-x-` | `{theme.width}`  | Sets a value for the left and right slices |
-| `border-slice-y-` | `{theme.height}` | Sets a value for the top and bottom slices |
-| `border-slice-t-` | `{theme.height}` | Sets a value for the top slice             |
-| `border-slice-r-` | `{theme.width}`  | Sets a value for the right slice           |
-| `border-slice-b-` | `{theme.height}` | Sets a value for the bottom slice          |
-| `border-slice-l-` | `{theme.width}`  | Sets a value for the left slice            |
+The `border-image-slice` has it's own set of values that can be extended or overwritten through the `borderSlice` property on the `tailwind.config.js`.
+
+Since border-image-slice works with unitless values (no pixels, rems, etc) it's the only property that requires custom values.
+
+The default `theme.spacing` values can't be used because they contain units (`rem`). The `borderSlice` values follow the same pattern as the default `spacing`, `width` or `height` that we are used to but without units.
+
+| Utility           | Values                                |                                            |
+| ----------------- | ------------------------------------- | ------------------------------------------ |
+| `border-slice-`   | `{theme.borderSlice}` / `{arbitrary}` | Sets a value for all four slices           |
+| `border-slice-x-` | `{theme.borderSlice}` / `{arbitrary}` | Sets a value for the left and right slices |
+| `border-slice-y-` | `{theme.borderSlice}` / `{arbitrary}` | Sets a value for the top and bottom slices |
+| `border-slice-t-` | `{theme.borderSlice}` / `{arbitrary}` | Sets a value for the top slice             |
+| `border-slice-r-` | `{theme.borderSlice}` / `{arbitrary}` | Sets a value for the right slice           |
+| `border-slice-b-` | `{theme.borderSlice}` / `{arbitrary}` | Sets a value for the bottom slice          |
+| `border-slice-l-` | `{theme.borderSlice}` / `{arbitrary}` | Sets a value for the left slice            |
 
 The border-image-slice CSS property divides the image specified by border-image-source into regions. These regions form the components of an element's border image.
 
@@ -84,29 +90,29 @@ With the slice property you can control the 8 outer slices. To control the inner
 
 ### Width
 
-| Utility                 | Values           |                                            |
-| ----------------------- | ---------------- | ------------------------------------------ |
-| `border-image-width-`   | `{theme.width}`  | Sets a value for all four widths           |
-| `border-image-width-x-` | `{theme.width}`  | Sets a value for the left and right widths |
-| `border-image-width-y-` | `{theme.height}` | Sets a value for the top and bottom widths |
-| `border-image-width-t-` | `{theme.height}` | Sets a value for the top width             |
-| `border-image-width-r-` | `{theme.width}`  | Sets a value for the right width           |
-| `border-image-width-b-` | `{theme.height}` | Sets a value for the bottom width          |
-| `border-image-width-l-` | `{theme.width}`  | Sets a value for the left width            |
+| Utility                 | Values                           |                                            |
+| ----------------------- | -------------------------------- | ------------------------------------------ |
+| `border-image-width-`   | `{theme.width}` / `{arbitrary}`  | Sets a value for all four widths           |
+| `border-image-width-x-` | `{theme.width}` / `{arbitrary}`  | Sets a value for the left and right widths |
+| `border-image-width-y-` | `{theme.height}` / `{arbitrary}` | Sets a value for the top and bottom widths |
+| `border-image-width-t-` | `{theme.height}` / `{arbitrary}` | Sets a value for the top width             |
+| `border-image-width-r-` | `{theme.width}` / `{arbitrary}`  | Sets a value for the right width           |
+| `border-image-width-b-` | `{theme.height}` / `{arbitrary}` | Sets a value for the bottom width          |
+| `border-image-width-l-` | `{theme.width}` / `{arbitrary}`  | Sets a value for the left width            |
 
 The border-image-width CSS property sets the width of an element's border image and like slice property, the witdh is also a short-and for the four sides.
 
 ### Outset
 
-| Utility            | Values           |                                             |
-| ------------------ | ---------------- | ------------------------------------------- |
-| `border-outset-`   | `{theme.width}`  | Sets a value for all four outsets           |
-| `border-outset-x-` | `{theme.width}`  | Sets a value for the left and right outsets |
-| `border-outset-y-` | `{theme.height}` | Sets a value for the top and bottom outsets |
-| `border-outset-t-` | `{theme.height}` | Sets a value for the top outset             |
-| `border-outset-r-` | `{theme.width}`  | Sets a value for the right outset           |
-| `border-outset-b-` | `{theme.height}` | Sets a value for the bottom outset          |
-| `border-outset-l-` | `{theme.width}`  | Sets a value for the left outset            |
+| Utility            | Values                           |                                             |
+| ------------------ | -------------------------------- | ------------------------------------------- |
+| `border-outset-`   | `{theme.width}` / `{arbitrary}`  | Sets a value for all four outsets           |
+| `border-outset-x-` | `{theme.width}` / `{arbitrary}`  | Sets a value for the left and right outsets |
+| `border-outset-y-` | `{theme.height}` / `{arbitrary}` | Sets a value for the top and bottom outsets |
+| `border-outset-t-` | `{theme.height}` / `{arbitrary}` | Sets a value for the top outset             |
+| `border-outset-r-` | `{theme.width}` / `{arbitrary}`  | Sets a value for the right outset           |
+| `border-outset-b-` | `{theme.height}` / `{arbitrary}` | Sets a value for the bottom outset          |
+| `border-outset-l-` | `{theme.width}` / `{arbitrary}`  | Sets a value for the left outset            |
 
 The border-image-outset CSS property sets the distance by which an element's border image is set out from its border box.
 
@@ -116,9 +122,9 @@ Like the slice and width property, the witdh is also a short-and for the four si
 
 ### Repeat
 
-| Utility          | Values                                |
-| ---------------- | ------------------------------------- |
-| `border-repeat-` | `repeat`, `round`, `space`, `stretch` |
+| Utility          | Values                                                |
+| ---------------- | ----------------------------------------------------- |
+| `border-repeat-` | `repeat`, `round`, `space`, `stretch` , `{arbitrary}` |
 
 The border-image-repeat CSS property defines how the edge regions and middle region of a source image are adjusted to fit the dimensions of an element's border image.
 

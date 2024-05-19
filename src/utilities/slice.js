@@ -63,7 +63,7 @@ const values = {
   full: '100%',
 }
 
-const sliceUtilities = ({ addUtilities, matchUtilities, theme }) => {
+const utilities = ({ addUtilities, matchUtilities, theme }) => {
   matchUtilities(
     {
       'border-slice': (value) => ({
@@ -74,7 +74,7 @@ const sliceUtilities = ({ addUtilities, matchUtilities, theme }) => {
       }),
     },
     {
-      values,
+      values: theme('borderSlice'),
     },
   )
 
@@ -86,7 +86,7 @@ const sliceUtilities = ({ addUtilities, matchUtilities, theme }) => {
       }),
     },
     {
-      values,
+      values: theme('borderSlice'),
     },
   )
 
@@ -98,7 +98,7 @@ const sliceUtilities = ({ addUtilities, matchUtilities, theme }) => {
       }),
     },
     {
-      values,
+      values: theme('borderSlice'),
     },
   )
 
@@ -109,7 +109,7 @@ const sliceUtilities = ({ addUtilities, matchUtilities, theme }) => {
       }),
     },
     {
-      values,
+      values: theme('borderSlice'),
     },
   )
 
@@ -120,7 +120,7 @@ const sliceUtilities = ({ addUtilities, matchUtilities, theme }) => {
       }),
     },
     {
-      values,
+      values: theme('borderSlice'),
     },
   )
 
@@ -131,7 +131,7 @@ const sliceUtilities = ({ addUtilities, matchUtilities, theme }) => {
       }),
     },
     {
-      values,
+      values: theme('borderSlice'),
     },
   )
 
@@ -142,7 +142,7 @@ const sliceUtilities = ({ addUtilities, matchUtilities, theme }) => {
       }),
     },
     {
-      values,
+      values: theme('borderSlice'),
     },
   )
 
@@ -156,4 +156,4 @@ const sliceUtilities = ({ addUtilities, matchUtilities, theme }) => {
   })
 }
 
-module.exports = { sliceUtilities }
+module.exports = { utilities, values }

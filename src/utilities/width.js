@@ -1,4 +1,4 @@
-const widthUtilities = ({ matchUtilities, theme }) => {
+const utilities = ({ matchUtilities, theme }) => {
   matchUtilities(
     {
       'border-image-width': (value) => ({
@@ -82,4 +82,4 @@ const widthUtilities = ({ matchUtilities, theme }) => {
   )
 }
 
-module.exports = { widthUtilities }
+module.exports = { utilities }

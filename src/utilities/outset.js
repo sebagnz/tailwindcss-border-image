@@ -1,4 +1,4 @@
-const outsetUtilities = ({ matchUtilities, theme }) => {
+const utilities = ({ matchUtilities, theme }) => {
   matchUtilities(
     {
       'border-outset': (value) => ({
@@ -82,4 +82,4 @@ const outsetUtilities = ({ matchUtilities, theme }) => {
   )
 }
 
-module.exports = { outsetUtilities }
+module.exports = { utilities }

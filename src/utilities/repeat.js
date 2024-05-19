@@ -1,4 +1,4 @@
-const repeatUtilities = ({ matchUtilities }) => {
+const utilities = ({ matchUtilities }) => {
   matchUtilities(
     {
       'border-repeat': (value) => ({
@@ -16,4 +16,4 @@ const repeatUtilities = ({ matchUtilities }) => {
   )
 }
 
-module.exports = { repeatUtilities }
+module.exports = { utilities }
