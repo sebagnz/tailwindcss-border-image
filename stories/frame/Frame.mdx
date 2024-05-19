@@ -1,0 +1,43 @@
+import { Source, Meta, Title, Story } from '@storybook/blocks'
+
+import * as FrameStories from './Frame.stories'
+
+<Meta of={FrameStories} />
+
+<Title />
+
+## With border gradient
+
+### HTML
+
+<Source code={`
+<div class="border-image-gradient-to-tr from-indigo-900 to-indigo-200 border-slice-1 border-slice-no-fill border-image-width-2">
+  <!-- Your content -->
+</div>
+`} language="html" />
+
+<Story of={FrameStories.Gradient} />
+
+## With transparency
+
+### HTML
+
+<Source code={`
+<div class="border-image-gradient-to-br from-indigo-900 via-transparent via-30% border-slice-1 border-slice-no-fill border-image-width-t-1 border-image-width-l-1">
+  <!-- Your content -->
+</div>
+`} language="html" />
+
+<Story of={FrameStories.GradientTransparent} />
+
+## With animation on hover
+
+### HTML
+
+<Source code={`
+<div class="border-image-gradient-to-br from-indigo-900 via-transparent via-30% border-slice-1 border-slice-no-fill border-image-width-t-1 border-image-width-r-0 border-image-width-b-0 border-image-width-l-1 transition-all duration-500 hover:border-image-width-r-1 hover:border-image-width-b-1 hover:hover:to-indigo-900 hover:via-indigo-300 hover:via-50%">
+  <!-- Your content -->
+</div>
+`} language="html" />
+
+<Story of={FrameStories.GradientTransparentAnimated} />
