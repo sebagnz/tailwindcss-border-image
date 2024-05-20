@@ -18,7 +18,7 @@ to be written with tailwind:
 
 ```html
 <div
-  class="border-image-gradient-to-t form-indigo-900 to-indigo-300 border-slice-1 border-width-0 border-outset-x-full border-repeat-stretch"
+  class="border-image-gradient-to-l form-indigo-900 to-indigo-300 border-slice-1 border-width-0 border-outset-x-full border-repeat-stretch"
 ></div>
 ```
 
