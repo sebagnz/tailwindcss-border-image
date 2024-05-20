@@ -2,15 +2,33 @@
 
 Add support for CSS [border-image][mdn-border-image] property.
 
-This plugin provides a set of primitives that enable you work and fully customize border-image properties. It's not opinionated, meaning it doesn't provide any UI components, and it doesn't override any tailwind default values or configuration.
+This plugin provides a set of primitives that enable you to work and fully customize css border-image properties.
 
-## Storybook
+It's not opinionated, meaning it doesn't provide any UI components or override any tailwind default values or configuration.
 
-In this [storybook][storybook] you'll find examples of real use cases and cool things you can build using this property.
+As an example, it makes is possible for this css:
+
+```CSS
+div {
+ background-image: linear-gradient(to left, #581c87, #d8b4fe) 1 fill / 0 / 0 100% stretch;
+}
+```
+
+to be written with tailwind:
+
+```html
+<div
+  class="border-image-gradient-to-t form-indigo-900 to-indigo-300 border-slice-1 border-width-0 border-outset-x-full border-repeat-stretch"
+></div>
+```
+
+## Get inspired
+
+In this [storybook][storybook] you'll find examples of real use cases and cool things you can build using this powerful property.
 
 ## Browser compatibility
 
-The border-image property is widely supported. (Even since IE). You can check it's support [here][can-i-use-border-image].
+The border-image property is widely supported, even since IE. You can check its support [here][can-i-use-border-image].
 
 ## Instalation
 
@@ -33,15 +51,17 @@ module.exports = {
 
 ## Utilities
 
-The `border-image` property has a complex syntax that follow this schema:
+The `border-image` syntax follows this schema:
 
 ```
 border-image: <source> <slice>/<width>/<outset> <repeat>
 ```
 
-Basically it's a short-hand for setting all of those values at once. This plugin will provide you utilities to work with each on of them in a tailwind CSS fashion.
+Basically it's a short-hand for setting `border-image-source`, `border-image-slice`, `border-image-width`, `border-image-outset` and `border-image-repeat` in a one-liner.
 
-### Source
+This plugin will provide you with utilities to work with each one of them in a tailwind CSS fashion.
+
+### Source _(required)_
 
 | Utility         | Values                    |
 | --------------- | ------------------------- |
@@ -50,13 +70,15 @@ Basically it's a short-hand for setting all of those values at once. This plugin
 
 The border-image-source CSS property sets the source image used to create an element's border image. (Keep in mind that all gradients are also considered images).
 
-To set the border-image source you can use the `border-image-{utility}`.
+To set the border-image source you can use the `border-image-{value}`.
 
-`{utility}` can be any value defined in your `theme.backgroundImage` meaning that any gradient or image resource included in your theme can be used as a border image source. For example `border-image-gradient-to-t-`.
+`{value}` can be anything defined in your `theme.backgroundImage` meaning that any gradient or image resource included in your theme can be used as a border image source. For example `border-image-gradient-to-t`.
 
 It also supports arbitrary values, that way if you don't want to add an specific backgroundImage to your theme you can just inline it. For example: `border-image-[conic-gradient(var(--tw-gradient-stops) 0 0)]`
 
 ### Slice
+
+_`Default: 0`_
 
 The `border-image-slice` has it's own set of values that can be extended or overwritten through the `borderSlice` property on the `tailwind.config.js`.
 
@@ -82,6 +104,8 @@ This plugin also proivdes utilities to set only `x`, `y` or individual values if
 
 ### Slice fill
 
+_`Default: fill`_
+
 | Utility         | Values            |
 | --------------- | ----------------- |
 | `border-slice-` | `fill`, `no-fill` |
@@ -89,6 +113,8 @@ This plugin also proivdes utilities to set only `x`, `y` or individual values if
 With the slice property you can control the 8 outer slices. To control the inner slice (the 9th slice) you should use the fill property. To do that you should also make use of the `border-slice-` utilities, this time targeting the fill value.
 
 ### Width
+
+_`Default: 0`_
 
 | Utility                 | Values                           |                                            |
 | ----------------------- | -------------------------------- | ------------------------------------------ |
@@ -103,6 +129,8 @@ With the slice property you can control the 8 outer slices. To control the inner
 The border-image-width CSS property sets the width of an element's border image and like slice property, the witdh is also a short-and for the four sides.
 
 ### Outset
+
+_`Default: 0`_
 
 | Utility            | Values                           |                                             |
 | ------------------ | -------------------------------- | ------------------------------------------- |
@@ -121,6 +149,8 @@ The parts of the border image that are rendered outside the element's border box
 Like the slice and width property, the witdh is also a short-and for the four sides.
 
 ### Repeat
+
+_`Default: stretch`_
 
 | Utility          | Values                                                |
 | ---------------- | ----------------------------------------------------- |
