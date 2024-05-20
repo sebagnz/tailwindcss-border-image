@@ -2,7 +2,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/sebagnz/tailwindcss-border-image">
-    <img src="https://raw.githubusercontent.com/tailwindlabs/tailwindcss-typography/HEAD/.github/tailwind-logo.png" alt="Tailwind logo" width="80">
+    <img src="https://raw.githubusercontent.com/sebagnz/tailwindcss-border-image/HEAD/.github/tailwind-logo.png" alt="Tailwind logo" width="80">
   </a>
 
   <h3 align="center">Tailwind CSS border-image plugin</h3>
