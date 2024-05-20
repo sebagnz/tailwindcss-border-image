@@ -1,16 +1,56 @@
-# Tailwind CSS border image plugin
+<!-- HEADING -->
+<br />
+<div align="center">
+  <a href="https://github.com/sebagnz/tailwindcss-border-image">
+    <img src="https://raw.githubusercontent.com/tailwindlabs/tailwindcss-typography/HEAD/.github/tailwind-logo.png" alt="Tailwind logo" width="80">
+  </a>
 
-Add support for CSS [border-image][mdn-border-image] property.
+  <h3 align="center">Tailwind CSS border-image plugin</h3>
 
-This plugin provides a set of primitives that enable you to work and fully customize css border-image properties.
+  <p align="center">
+    A tailwind plugin that provides primitives to work and fully customize the CSS <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/border-image">border-image</a> property.
+    <br />
+    <br />
+    <a href="https://sebagnz.github.io/tailwindcss-border-image">View demo</a>
+    ·
+    <a href="https://github.com/sebagnz/tailwindcss-border-image/issues/new?labels=bug&template=bug-report---.md">Report bug</a>
+    ·
+    <a href="https://github.com/sebagnz/tailwindcss-border-image/issues/new?labels=enhancement&template=feature-request---.md">Request feature</a>
+  </p>
+</div>
 
-It's not opinionated, meaning it doesn't provide any UI components or override any tailwind default values or configuration.
+<!-- TABLE OF CONTENTS -->
+<details>
+  <summary>Table of contents</summary>
+  <ol>
+    <li><a href="#the-plugin">The plugin</a></li>
+    <li><a href="#browser-compatibility">Browser compatibility</a></li>
+    <li><a href="#getting-started">Getting started</a></li>
+    <li><a href="#utilities">Utilities</a></li>
+    <ul>
+      <li><a href="#source">Source</a></li>
+      <li><a href="#slice">Slice</a></li>
+      <li><a href="#slice-fill">Slice fill</a></li>
+      <li><a href="#width">Width</a></li>
+      <li><a href="#outset">Outset</a></li>
+      <li><a href="#repeat">Repeat</a></li>
+    </ul>
+    <li><a href="#resources">Resources</a></li>
+    <li><a href="#support-my-work">Support my work</a></li>
+  </ol>
+</details>
 
-As an example, it makes is possible for this css:
+## The plugin
+
+Tailwind CSS doesn't provide support for border-image out of the box, therefore this plugin aims to provide you with a set of utilities to meet that need.
+
+The plugin it's not opinionated, meaning it doesn't provide any UI components nor override any of the tailwind's default configuration or values.
+
+As an example, it makes it possible for this css:
 
 ```CSS
 div {
- background-image: linear-gradient(to left, #581c87, #d8b4fe) 1 fill / 0 / 0 100% stretch;
+ border-image: linear-gradient(to left, #581c87, #d8b4fe) 1 fill / 0 / 0 100% stretch;
 }
 ```
 
@@ -22,15 +62,11 @@ to be written with tailwind:
 ></div>
 ```
 
-## Get inspired
-
-In this [storybook][storybook] you'll find examples of real use cases and cool things you can build using this powerful property.
-
 ## Browser compatibility
 
 The border-image property is widely supported, even since IE. You can check its support [here][can-i-use-border-image].
 
-## Instalation
+## Getting started
 
 ```bash
 npm install -D tailwindcss-border-image
@@ -51,7 +87,7 @@ module.exports = {
 
 ## Utilities
 
-The `border-image` syntax follows this schema:
+The CSS `border-image` syntax follows this schema:
 
 ```
 border-image: <source> <slice>/<width>/<outset> <repeat>
@@ -61,7 +97,9 @@ Basically it's a short-hand for setting `border-image-source`, `border-image-sli
 
 This plugin will provide you with utilities to work with each one of them in a tailwind CSS fashion.
 
-### Source _(required)_
+### Source
+
+_`Required`_
 
 | Utility         | Values                    |
 | --------------- | ------------------------- |
@@ -171,7 +209,7 @@ If you would like to know more about what you can do with this powerful CSS prop
 
 If you really like my job and you would like to [!["buy me a coffee"](https://img.shields.io/badge/-buy_me_a%C2%A0coffee-gray?logo=Buy-me-a-coffee)](https://www.buymeacoffee.com/sebagnz) I'd be eternally grateful 😊
 
-[storybook]: https://sebagnz.github.io/tailwindcss-border-image/?path=/docs/example-breakout--docs
+[storybook]: https://sebagnz.github.io/tailwindcss-border-image
 [mdn-border-image]: https://developer.mozilla.org/en-US/docs/Web/CSS/border-image
 [can-i-use-border-image]: https://caniuse.com/border-image
 [the-complex-but-awesome-css-border-image-property]: https://www.smashingmagazine.com/2024/01/css-border-image-property/
