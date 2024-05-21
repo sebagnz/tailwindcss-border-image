@@ -4,11 +4,11 @@
 
 @layer base {
   h1 {
-    @apply text-2xl font-bold;
+    @apply text-xl sm:text-2xl font-bold;
   }
 
   h2 {
-    @apply text-xl font-semibold;
+    @apply text-base sm:text-xl font-semibold;
   }
 }
 
