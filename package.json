@@ -1,6 +1,9 @@
 {
   "name": "tailwindcss-border-image",
   "version": "1.1.2",
+  "bugs": {
+    "url": "https://github.com/sebagnz/tailwindcss-border-image/issues"
+  },
   "description": "Tailwind CSS plugin to add border-image utilities.",
   "keywords": [
     "tailwindcss",
